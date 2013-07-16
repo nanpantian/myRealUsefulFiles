@@ -1,0 +1,20 @@
+alias ga='git add ' 
+alias gb='git branch ' 
+alias gc='git commit' 
+alias gm='git commit -m' 
+alias gam='git commit -am' 
+alias gamend='git commit --amend -a '
+alias gd='git diff' 
+alias gdump='git cat-file -p'
+alias gdc='git diff --cached' 
+alias gl='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short' 
+alias glall='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short master --all' 
+alias glfancy='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset" --abbrev-commit --date=relative'
+
+alias go='git checkout ' 
+alias gs='git status '
+alias gt='git tag' 
+alias got='git ' 
+alias get='git '
+alias -p
+
