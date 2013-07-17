@@ -1,3 +1,7 @@
+#To run single test (TestApp1), issue this command :
+#mvn -Dtest=TestApp1 test
+
+
 #maven coordinate
 #---------hibernate
 #(org.hibernate,hibernate-core,4.2.2.Final)
@@ -15,13 +19,26 @@
 #(org.slf4j,slf4j-api,1.7.5)
 #(org.slf4j,slf4j-log4j12,1.7.5)
 
+#---------	surefire
+(org.apache.maven.plugins,maven-surefire-plugin,2.15)
+
+
 
 alias ga='git add ' 
+alias gaundo='git reset HEAD ' #filename:unstage the staged file
+
 alias gb='git branch ' 
+alias gblist='git branch -a' #list all branches
+
 alias gc='git commit' 
 alias gm='git commit -m' 
 alias gam='git commit -am' 
 alias gamend='git commit --amend -a '
+alias gmundo='git revert HEAD --no-edit'
+alias gmremove='git reset --hard ' #hash ot tag:reset commit to previous hash or tag
+
+
+
 alias gd='git diff' 
 alias gdump='git cat-file -p'
 alias gdc='git diff --cached' 
@@ -35,7 +52,8 @@ alias gt='git tag'
 alias got='git ' 
 alias get='git '
 
+#alias gitremoteadd='git remote add origin git@github.com:nanpantian/myRealUsefulFiles.git'
 alias gitremoteadd='git remote add origin git@github.com:nanpantian/myRealUsefulFiles.git'
-
+alias gitremoteshow='git remote show origin'
 
 alias -p
