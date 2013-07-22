@@ -36,6 +36,8 @@ alias gam='git commit -am'
 alias gamend='git commit --amend -a '
 alias gmundo='git revert HEAD --no-edit'
 alias gmremove='git reset --hard ' #hash ot tag:reset commit to previous hash or tag
+alias gclone='git clone ' 	#git clone ori_dir cloned_dir
+alias gclonebare='git clone --bare ' 	#git clone --bare ori_dir cloned_dir
 
 
 
@@ -57,3 +59,7 @@ alias gitremoteadd='git remote add origin git@github.com:nanpantian/myRealUseful
 alias gitremoteshow='git remote show origin'
 
 alias -p
+
+#ssh-keygen -t rsa -C ¡°name@email.com¡±
+#$ ssh -vT git@github.com,You can also check that the key is being used
+#$ ssh-add -l,To verify that you have a key generated and loaded into SSH
